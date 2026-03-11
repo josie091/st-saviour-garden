@@ -29,4 +29,37 @@ if __name__ == '__main__':
                 print('🌱', end='')
         print ('')
 
+    print ('plaid')
+    for row in range(11):
+        for col in range(11):
+            if row % 2 == 0 and col % 2 == 0:
+                print ('🌷', end= "")
+            else:
+                print("🌱", end="")
+        print('')
+
+    print('diagonal')
+    for row in range (11):
+        for col in range(11):
+            if row %2 == 0 and col % 2 == 0:
+                print ('🌷', end= "")
+            elif row %2 ==1 and col% 2 ==1:
+                print ('🌷', end= "")
+            else:
+                print("🌱", end="")
+        print('')
+
+    print('cross')
+    for row in range(11):
+        for col in range(11):
+            if row == col or row + col ==10:
+                print ('🌷', end= "")
+            else:
+                print("🌱", end="")
+        print ()
+
+
+
+
+
         
